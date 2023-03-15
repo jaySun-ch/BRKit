@@ -8,8 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <Photos/Photos.h>
 
-@interface ImageAlbumItem : NSObject
+@interface BRImageAlbumItem : NSObject
 @property (nonatomic,copy) NSString *title;
 @property (nonatomic,strong) PHFetchResult<PHAsset*> *fetchResult;
-+(ImageAlbumItem *)initWithData:(NSString *)Title  fetchResult:(PHFetchResult<PHAsset*> *)fetchResult;
++(BRImageAlbumItem *)initWithData:(NSString *)Title  fetchResult:(PHFetchResult<PHAsset*> *)fetchResult;
 @end

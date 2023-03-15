@@ -5,13 +5,13 @@
 //  Created by 孙志雄 on 2023/2/17.
 //
 
-#import "BRWindow+Extension.h"
-#import "BRMediaPicker.h"
+#import "UIWindow+BRExtension.h"
 
-@interface UIWindow (Extension)
+@interface UIWindow (BRExtension)
+
 @end
 
-@implementation UIWindow (Extension)
+@implementation UIWindow (BRExtension)
 
 + (void)PresentPickerWithConfig:(BRMediaConfig *)Config{
     UIWindow *window = [[UIApplication sharedApplication] delegate].window;

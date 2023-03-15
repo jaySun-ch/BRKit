@@ -6,9 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BRConfigHelper.h"
+#import "BRMediaPicker.h"
 
-@interface UIWindow (Extension)
+
+@interface UIWindow (BRExtension)
 
 +(void)PresentPickerWithConfig:(BRMediaConfig *)Config;
+
 @end

@@ -6,6 +6,7 @@
 //
 
 #import "BRTabBarStyleConfig.h"
+#import "BRExtension.h"
 
 @interface BRTabBarItem : UIView
 

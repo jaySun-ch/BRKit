@@ -6,7 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AVFoundation/AVFoundation.h>
+#import <Photos/Photos.h>
+#import "BRExtension.h"
 
 @interface BRPreviewVideoBaseController : UIViewController
 @property (nonatomic,strong) AVPlayerLayer *playItemLayer;

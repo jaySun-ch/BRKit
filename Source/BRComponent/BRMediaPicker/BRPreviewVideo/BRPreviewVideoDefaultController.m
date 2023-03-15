@@ -106,10 +106,10 @@
 -(void)initVideoProgressBar{
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     float total = CMTimeGetSeconds([self.playItemLayer.player.currentItem duration]) + 1;
-    if((50 * (CGFloat)(total)) < (ScreenWidth - 40)){
+    if((50 * (CGFloat)(total)) < (BRScreenWidth - 40)){
         scrollView.frame = CGRectMake(0,0,50 * (CGFloat)(total),60);
     }else{
-        scrollView.frame = CGRectMake(20,0,ScreenWidth - 40, 60);
+        scrollView.frame = CGRectMake(20,0,BRScreenWidth - 40, 60);
     }
     scrollView.centerX = self.view.centerX;
     scrollView.contentSize = CGSizeMake(50 * (int)(total) ,60);

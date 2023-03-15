@@ -12,9 +12,8 @@
 		348E1D6CB08CE79B33F1A8EA478E2F3E /* Pods-BRKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5C2AE24119183D1826D2BEB0FBE478 /* Pods-BRKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		378D05C6D90ADDCF2529C1754F158729 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3D9EC0F229C219A7006ABB24 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 3D9EC0BF29C219A7006ABB24 /* .gitkeep */; };
-		3D9EC0F329C219A7006ABB24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3D9EC0C029C219A7006ABB24 /* README.md */; };
-		3D9EC0F429C219A7006ABB24 /* BRWindow+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0C429C219A7006ABB24 /* BRWindow+Extension.h */; };
-		3D9EC0F529C219A7006ABB24 /* BRWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0C529C219A7006ABB24 /* BRWindow+Extension.m */; };
+		3D9EC0F429C219A7006ABB24 /* UIWindow+BRExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0C429C219A7006ABB24 /* UIWindow+BRExtension.h */; };
+		3D9EC0F529C219A7006ABB24 /* UIWindow+BRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0C529C219A7006ABB24 /* UIWindow+BRExtension.m */; };
 		3D9EC0F629C219A7006ABB24 /* BRCropRectangleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0C729C219A7006ABB24 /* BRCropRectangleImage.m */; };
 		3D9EC0F729C219A7006ABB24 /* BRCropCricleImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0C829C219A7006ABB24 /* BRCropCricleImage.h */; };
 		3D9EC0F829C219A7006ABB24 /* BRCropRectangleImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0C929C219A7006ABB24 /* BRCropRectangleImage.h */; };
@@ -25,9 +24,9 @@
 		3D9EC0FD29C219A7006ABB24 /* BRCollectionImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0CF29C219A7006ABB24 /* BRCollectionImageCell.m */; };
 		3D9EC0FE29C219A7006ABB24 /* BRCollectionVideoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0D029C219A7006ABB24 /* BRCollectionVideoCell.h */; };
 		3D9EC0FF29C219A7006ABB24 /* BRHeadTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0D129C219A7006ABB24 /* BRHeadTableCell.m */; };
-		3D9EC10029C219A7006ABB24 /* ImageAlbumItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0D329C219A7006ABB24 /* ImageAlbumItem.m */; };
+		3D9EC10029C219A7006ABB24 /* BRmageAlbumItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0D329C219A7006ABB24 /* BRmageAlbumItem.m */; };
 		3D9EC10129C219A7006ABB24 /* BRConfigHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0D429C219A7006ABB24 /* BRConfigHelper.m */; };
-		3D9EC10229C219A7006ABB24 /* ImageAlbumItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0D529C219A7006ABB24 /* ImageAlbumItem.h */; };
+		3D9EC10229C219A7006ABB24 /* BRImageAlbumItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0D529C219A7006ABB24 /* BRImageAlbumItem.h */; };
 		3D9EC10329C219A7006ABB24 /* BRConfigHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0D629C219A7006ABB24 /* BRConfigHelper.h */; };
 		3D9EC10429C219A7006ABB24 /* BRPreviewVideoDefaultController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0D829C219A7006ABB24 /* BRPreviewVideoDefaultController.h */; };
 		3D9EC10529C219A7006ABB24 /* BRPreviewVideoBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0D929C219A7006ABB24 /* BRPreviewVideoBaseController.m */; };
@@ -40,7 +39,6 @@
 		3D9EC10C29C219A7006ABB24 /* BRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0E229C219A7006ABB24 /* BRTabBar.m */; };
 		3D9EC10D29C219A7006ABB24 /* BRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0E329C219A7006ABB24 /* BRTabBarController.m */; };
 		3D9EC10E29C219A7006ABB24 /* BRTabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0E429C219A7006ABB24 /* BRTabBarItem.h */; };
-		3D9EC10F29C219A7006ABB24 /* BRTabBarControllerMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0E529C219A7006ABB24 /* BRTabBarControllerMain.h */; };
 		3D9EC11029C219A7006ABB24 /* BRTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0E629C219A7006ABB24 /* BRTabBar.h */; };
 		3D9EC11129C219A7006ABB24 /* BRTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EC0E729C219A7006ABB24 /* BRTabBarItem.m */; };
 		3D9EC11229C219A7006ABB24 /* BRTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9EC0E829C219A7006ABB24 /* BRTabBarController.h */; };
@@ -89,9 +87,8 @@
 		3991D340D9A6C21BD8ADD2358BBB23E3 /* BRKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5C2AE24119183D1826D2BEB0FBE478 /* Pods-BRKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BRKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		3D9EC0BF29C219A7006ABB24 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3D9EC0C029C219A7006ABB24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3D9EC0C429C219A7006ABB24 /* BRWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BRWindow+Extension.h"; sourceTree = "<group>"; };
-		3D9EC0C529C219A7006ABB24 /* BRWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BRWindow+Extension.m"; sourceTree = "<group>"; };
+		3D9EC0C429C219A7006ABB24 /* UIWindow+BRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+BRExtension.h"; sourceTree = "<group>"; };
+		3D9EC0C529C219A7006ABB24 /* UIWindow+BRExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+BRExtension.m"; sourceTree = "<group>"; };
 		3D9EC0C729C219A7006ABB24 /* BRCropRectangleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCropRectangleImage.m; sourceTree = "<group>"; };
 		3D9EC0C829C219A7006ABB24 /* BRCropCricleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCropCricleImage.h; sourceTree = "<group>"; };
 		3D9EC0C929C219A7006ABB24 /* BRCropRectangleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCropRectangleImage.h; sourceTree = "<group>"; };
@@ -102,9 +99,9 @@
 		3D9EC0CF29C219A7006ABB24 /* BRCollectionImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCollectionImageCell.m; sourceTree = "<group>"; };
 		3D9EC0D029C219A7006ABB24 /* BRCollectionVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCollectionVideoCell.h; sourceTree = "<group>"; };
 		3D9EC0D129C219A7006ABB24 /* BRHeadTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRHeadTableCell.m; sourceTree = "<group>"; };
-		3D9EC0D329C219A7006ABB24 /* ImageAlbumItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAlbumItem.m; sourceTree = "<group>"; };
+		3D9EC0D329C219A7006ABB24 /* BRmageAlbumItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRmageAlbumItem.m; sourceTree = "<group>"; };
 		3D9EC0D429C219A7006ABB24 /* BRConfigHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRConfigHelper.m; sourceTree = "<group>"; };
-		3D9EC0D529C219A7006ABB24 /* ImageAlbumItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAlbumItem.h; sourceTree = "<group>"; };
+		3D9EC0D529C219A7006ABB24 /* BRImageAlbumItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRImageAlbumItem.h; sourceTree = "<group>"; };
 		3D9EC0D629C219A7006ABB24 /* BRConfigHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRConfigHelper.h; sourceTree = "<group>"; };
 		3D9EC0D829C219A7006ABB24 /* BRPreviewVideoDefaultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPreviewVideoDefaultController.h; sourceTree = "<group>"; };
 		3D9EC0D929C219A7006ABB24 /* BRPreviewVideoBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPreviewVideoBaseController.m; sourceTree = "<group>"; };
@@ -117,7 +114,6 @@
 		3D9EC0E229C219A7006ABB24 /* BRTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTabBar.m; sourceTree = "<group>"; };
 		3D9EC0E329C219A7006ABB24 /* BRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTabBarController.m; sourceTree = "<group>"; };
 		3D9EC0E429C219A7006ABB24 /* BRTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTabBarItem.h; sourceTree = "<group>"; };
-		3D9EC0E529C219A7006ABB24 /* BRTabBarControllerMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTabBarControllerMain.h; sourceTree = "<group>"; };
 		3D9EC0E629C219A7006ABB24 /* BRTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTabBar.h; sourceTree = "<group>"; };
 		3D9EC0E729C219A7006ABB24 /* BRTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTabBarItem.m; sourceTree = "<group>"; };
 		3D9EC0E829C219A7006ABB24 /* BRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTabBarController.h; sourceTree = "<group>"; };
@@ -129,6 +125,8 @@
 		3D9EC0EF29C219A7006ABB24 /* UITableView+BRExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+BRExtension.m"; sourceTree = "<group>"; };
 		3D9EC0F029C219A7006ABB24 /* UIView+BRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BRExtension.h"; sourceTree = "<group>"; };
 		3D9EC0F129C219A7006ABB24 /* NSObject+BRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BRExtension.h"; sourceTree = "<group>"; };
+		3DF7946F29C2251300D55212 /* BRDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRDefine.h; sourceTree = "<group>"; };
+		3DF7947029C2258A00D55212 /* BRExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRExtension.h; sourceTree = "<group>"; };
 		3FAAAAAB60BF6041640967A5207DB57E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4093E4692D003F02A346A20B72EC79C5 /* Pods-BRKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BRKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		42B9BE7F4BB5F6CEBA567FB7651B27D0 /* Pods-BRKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BRKit_Example-resources.sh"; sourceTree = "<group>"; };
@@ -204,8 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				3D9EC0EA29C219A7006ABB24 /* BRKIT.h */,
-				3D9EC0C029C219A7006ABB24 /* README.md */,
 				3D9EC0BF29C219A7006ABB24 /* .gitkeep */,
+				3DF7946F29C2251300D55212 /* BRDefine.h */,
+				3DF7947029C2258A00D55212 /* BRExtension.h */,
 				3D9EC0C129C219A7006ABB24 /* BRComponent */,
 				3D9EC0EB29C219A7006ABB24 /* BRExtension */,
 			);
@@ -224,25 +223,15 @@
 		3D9EC0C229C219A7006ABB24 /* BRMediaPicker */ = {
 			isa = PBXGroup;
 			children = (
-				3D9EC0C329C219A7006ABB24 /* Extension */,
 				3D9EC0C629C219A7006ABB24 /* BRCropImage */,
 				3D9EC0CB29C219A7006ABB24 /* BRCellType */,
 				3D9EC0D229C219A7006ABB24 /* Config */,
 				3D9EC0D729C219A7006ABB24 /* BRPreviewVideo */,
-				3D9EC0DC29C219A7006ABB24 /* BRMediaPicker.h */,
 				3D9EC0DD29C219A7006ABB24 /* BRButton */,
 				3D9EC0E029C219A7006ABB24 /* BRMediaPicker.m */,
+				3D9EC0DC29C219A7006ABB24 /* BRMediaPicker.h */,
 			);
 			path = BRMediaPicker;
-			sourceTree = "<group>";
-		};
-		3D9EC0C329C219A7006ABB24 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				3D9EC0C429C219A7006ABB24 /* BRWindow+Extension.h */,
-				3D9EC0C529C219A7006ABB24 /* BRWindow+Extension.m */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		3D9EC0C629C219A7006ABB24 /* BRCropImage */ = {
@@ -272,9 +261,9 @@
 		3D9EC0D229C219A7006ABB24 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				3D9EC0D329C219A7006ABB24 /* ImageAlbumItem.m */,
+				3D9EC0D529C219A7006ABB24 /* BRImageAlbumItem.h */,
+				3D9EC0D329C219A7006ABB24 /* BRmageAlbumItem.m */,
 				3D9EC0D429C219A7006ABB24 /* BRConfigHelper.m */,
-				3D9EC0D529C219A7006ABB24 /* ImageAlbumItem.h */,
 				3D9EC0D629C219A7006ABB24 /* BRConfigHelper.h */,
 			);
 			path = Config;
@@ -303,13 +292,12 @@
 		3D9EC0E129C219A7006ABB24 /* BRTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				3D9EC0E229C219A7006ABB24 /* BRTabBar.m */,
-				3D9EC0E329C219A7006ABB24 /* BRTabBarController.m */,
-				3D9EC0E429C219A7006ABB24 /* BRTabBarItem.h */,
-				3D9EC0E529C219A7006ABB24 /* BRTabBarControllerMain.h */,
-				3D9EC0E629C219A7006ABB24 /* BRTabBar.h */,
-				3D9EC0E729C219A7006ABB24 /* BRTabBarItem.m */,
 				3D9EC0E829C219A7006ABB24 /* BRTabBarController.h */,
+				3D9EC0E329C219A7006ABB24 /* BRTabBarController.m */,
+				3D9EC0E629C219A7006ABB24 /* BRTabBar.h */,
+				3D9EC0E229C219A7006ABB24 /* BRTabBar.m */,
+				3D9EC0E429C219A7006ABB24 /* BRTabBarItem.h */,
+				3D9EC0E729C219A7006ABB24 /* BRTabBarItem.m */,
 				3D9EC0E929C219A7006ABB24 /* BRTabBarStyleConfig.h */,
 			);
 			path = BRTabBarController;
@@ -318,6 +306,8 @@
 		3D9EC0EB29C219A7006ABB24 /* BRExtension */ = {
 			isa = PBXGroup;
 			children = (
+				3D9EC0C429C219A7006ABB24 /* UIWindow+BRExtension.h */,
+				3D9EC0C529C219A7006ABB24 /* UIWindow+BRExtension.m */,
 				3D9EC0EC29C219A7006ABB24 /* UITableView+BRExtension.h */,
 				3D9EC0ED29C219A7006ABB24 /* NSObject+BRExtension.m */,
 				3D9EC0EE29C219A7006ABB24 /* UIView+BRExtension.m */,
@@ -453,13 +443,13 @@
 				3D9EC11029C219A7006ABB24 /* BRTabBar.h in Headers */,
 				3D9EC11429C219A7006ABB24 /* BRKIT.h in Headers */,
 				3D9EC0FE29C219A7006ABB24 /* BRCollectionVideoCell.h in Headers */,
-				3D9EC10229C219A7006ABB24 /* ImageAlbumItem.h in Headers */,
+				3D9EC10229C219A7006ABB24 /* BRImageAlbumItem.h in Headers */,
 				3D9EC0F829C219A7006ABB24 /* BRCropRectangleImage.h in Headers */,
 				3D9EC10829C219A7006ABB24 /* BRMediaPicker.h in Headers */,
 				3D9EC10429C219A7006ABB24 /* BRPreviewVideoDefaultController.h in Headers */,
 				3D9EC11929C219A7006ABB24 /* UIView+BRExtension.h in Headers */,
 				3D9EC0F729C219A7006ABB24 /* BRCropCricleImage.h in Headers */,
-				3D9EC0F429C219A7006ABB24 /* BRWindow+Extension.h in Headers */,
+				3D9EC0F429C219A7006ABB24 /* UIWindow+BRExtension.h in Headers */,
 				3D9EC10E29C219A7006ABB24 /* BRTabBarItem.h in Headers */,
 				3D9EC0FC29C219A7006ABB24 /* BRHeadTableCell.h in Headers */,
 				3D9EC11329C219A7006ABB24 /* BRTabBarStyleConfig.h in Headers */,
@@ -469,7 +459,6 @@
 				3D9EC10929C219A7006ABB24 /* BRCenterButton.h in Headers */,
 				E84C09046DE99622D81E98845545966D /* BRKit-umbrella.h in Headers */,
 				3D9EC10329C219A7006ABB24 /* BRConfigHelper.h in Headers */,
-				3D9EC10F29C219A7006ABB24 /* BRTabBarControllerMain.h in Headers */,
 				3D9EC10729C219A7006ABB24 /* BRPreviewVideoBaseController.h in Headers */,
 				3D9EC11229C219A7006ABB24 /* BRTabBarController.h in Headers */,
 			);
@@ -576,7 +565,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9EC0F329C219A7006ABB24 /* README.md in Resources */,
 				3D9EC0F229C219A7006ABB24 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,12 +619,12 @@
 				3D9EC0FD29C219A7006ABB24 /* BRCollectionImageCell.m in Sources */,
 				3D9EC0F629C219A7006ABB24 /* BRCropRectangleImage.m in Sources */,
 				3D9EC11729C219A7006ABB24 /* UIView+BRExtension.m in Sources */,
-				3D9EC10029C219A7006ABB24 /* ImageAlbumItem.m in Sources */,
+				3D9EC10029C219A7006ABB24 /* BRmageAlbumItem.m in Sources */,
 				3D9EC10529C219A7006ABB24 /* BRPreviewVideoBaseController.m in Sources */,
 				3D9EC11629C219A7006ABB24 /* NSObject+BRExtension.m in Sources */,
 				3D9EC11829C219A7006ABB24 /* UITableView+BRExtension.m in Sources */,
 				3D9EC10629C219A7006ABB24 /* BRPreviewVideoDefaultController.m in Sources */,
-				3D9EC0F529C219A7006ABB24 /* BRWindow+Extension.m in Sources */,
+				3D9EC0F529C219A7006ABB24 /* UIWindow+BRExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

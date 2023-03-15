@@ -6,14 +6,6 @@
 //
 
 #import "BRMediaPicker.h"
-#import "BRCenterButton.h"
-#import "BRCollectionImageCell.h"
-#import "BRCollectionVideoCell.h"
-#import "BRHeadTableCell.h"
-#import "BRConfigHelper.h"
-#import "BRCropCricleImage.h"
-#import "BRPreviewVideoDefaultController.h"
-
 
 NSString *const BRImagecell = @"BRImageCell";
 NSString *const BRVideocell = @"BRVideoCell";
@@ -24,7 +16,7 @@ NSString *const BRTableCell = @"BRTableCell";
 @property (nonatomic,strong) UICollectionView *collectionView; //显示视频或者照片
 @property (nonatomic,strong) PHImageManager *imageManager;//相册资源管理器
 @property (nonatomic,assign) CGSize assetGridThumbnailSize;//单个格子大小
-@property (nonatomic,strong) NSMutableArray<ImageAlbumItem*> *items; //获取到的相册资源
+@property (nonatomic,strong) NSMutableArray<BRImageAlbumItem*> *items; //获取到的相册资源
 @property (nonatomic,assign) CGFloat GridCount; //一行显示多少个
 @property (nonatomic,strong) NSIndexPath *VideoSelectPath; //挑选的视频
 @property (nonatomic,strong) UIButton *nextbutton; //完成视频挑选button
@@ -33,7 +25,7 @@ NSString *const BRTableCell = @"BRTableCell";
 
 
 @property (nonatomic,strong) BRMediaConfig *Defaultconfig;
-@property (nonatomic,strong) ImageAlbumItem *currentItem;
+@property (nonatomic,strong) BRImageAlbumItem *currentItem;
 @property (nonatomic,strong) UIView *TopBar;
 @property (nonatomic,strong) UIButton *backButton;
 @property (nonatomic,strong) UIButton *multiPickButton;
@@ -56,7 +48,7 @@ NSString *const BRTableCell = @"BRTableCell";
         self.imageManager = [PHCachingImageManager defaultManager];
         self.GridCount = self.Defaultconfig.GridCount;
         self.PickImageArray = [NSMutableArray array];
-        self.assetGridThumbnailSize = CGSizeMake(((ScreenWidth/self.GridCount)-1) * (UIScreen.mainScreen.scale), ((ScreenWidth/self.GridCount)-1) * (UIScreen.mainScreen.scale));
+        self.assetGridThumbnailSize = CGSizeMake(((BRScreenWidth/self.GridCount)-1) * (BRScreenScale), ((BRScreenWidth/self.GridCount)-1) * (BRScreenScale));
     }
     return self;
 }
@@ -76,7 +68,7 @@ NSString *const BRTableCell = @"BRTableCell";
 
 #pragma 多选图片缩略图
 -(void)initMultiImage{
-    self.MultiPickDetialBar = [[UIScrollView alloc] initWithFrame:CGRectMake(0,0, ScreenWidth, 170)];
+    self.MultiPickDetialBar = [[UIScrollView alloc] initWithFrame:CGRectMake(0,0, BRScreenWidth, 170)];
     self.MultiPickDetialBar.backgroundColor = [UIColor whiteColor];
     self.MultiPickDetialBar.top = self.view.bottom - 200;
     self.MultiPickDetialBar.alwaysBounceHorizontal = YES;
@@ -105,7 +97,7 @@ NSString *const BRTableCell = @"BRTableCell";
     self.tableView.dataSource = self;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.transform = CGAffineTransformMakeTranslation(0,-ScreenHeight);
+    self.tableView.transform = CGAffineTransformMakeTranslation(0,-BRScreenHeight);
     [self.tableView registerClass:[BRHeadTableCell class] forCellReuseIdentifier:BRTableCell];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.view addSubview:self.tableView];
@@ -121,9 +113,9 @@ NSString *const BRTableCell = @"BRTableCell";
 #pragma 关闭TableView
 -(void)DismissTableView{
     [UIView animateWithDuration:0.3f animations:^{
-        self.tableView.transform = CGAffineTransformMakeTranslation(0,-ScreenHeight);
+        self.tableView.transform = CGAffineTransformMakeTranslation(0,-BRScreenHeight);
     } completion:^(BOOL finished) {
-        [self.collectionView scrollToTopAnimated:YES];
+        [self.collectionView scrollsToTop];
     }];
 }
 
@@ -176,7 +168,7 @@ NSString *const BRTableCell = @"BRTableCell";
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.minimumLineSpacing = 1;
     layout.minimumInteritemSpacing = 1;
-    [layout setItemSize:CGSizeMake((ScreenWidth/self.GridCount)-1,(ScreenWidth/self.GridCount)-1)];
+    [layout setItemSize:CGSizeMake((BRScreenWidth/self.GridCount)-1,(BRScreenWidth/self.GridCount)-1)];
     self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,50, self.view.frame.size.width, self.view.frame.size.height) collectionViewLayout:layout];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
@@ -325,7 +317,7 @@ NSString *const BRTableCell = @"BRTableCell";
                     NSIndexPath *lastcellPath = [NSIndexPath indexPathForRow:[self.currentItem.fetchResult indexOfObject:self.PickImageArray.firstObject] inSection:0];
                     BRCollectionImageCell *lastcell = (BRCollectionImageCell *)[self.collectionView cellForItemAtIndexPath:lastcellPath];
                     [lastcell DisimissPick];
-                    [self.PickImageArray removeFirstObject];
+                    [self.PickImageArray removeObjectAtIndex:0];
                 }
                 [self.PickImageArray addObject:asset];
                 [cell ShowPickAnimation];
@@ -362,7 +354,7 @@ NSString *const BRTableCell = @"BRTableCell";
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake((ScreenWidth/self.GridCount)-1,(ScreenWidth/self.GridCount)-1);
+    return CGSizeMake((BRScreenWidth/self.GridCount)-1,(BRScreenWidth/self.GridCount)-1);
 }
 
 #pragma 完成视频挑选
@@ -389,7 +381,7 @@ NSString *const BRTableCell = @"BRTableCell";
         [self convertCollection:smartAlbums];
         PHFetchResult<PHCollection*> *userCollections = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
         [self convertCollection:userCollections];
-        NSArray *sortArray = [self.items sortedArrayUsingComparator:^NSComparisonResult(ImageAlbumItem *obj1, ImageAlbumItem *obj2) {
+        NSArray *sortArray = [self.items sortedArrayUsingComparator:^NSComparisonResult(BRImageAlbumItem *obj1, BRImageAlbumItem *obj2) {
             if(obj1.fetchResult.count > obj2.fetchResult.count){
                 return NSOrderedAscending;
             }else{
@@ -420,7 +412,7 @@ NSString *const BRTableCell = @"BRTableCell";
         PHFetchResult<PHAsset *> *assetsFetchResult = [PHAsset fetchAssetsInAssetCollection:collection[i] options:options];
         if(assetsFetchResult.count > 0){
             NSString *title = [self titleOfAlbumForChinse:collection[i].localizedTitle];
-            [self.items addObject:[ImageAlbumItem initWithData:title fetchResult:assetsFetchResult]];
+            [self.items addObject:[BRImageAlbumItem initWithData:title fetchResult:assetsFetchResult]];
             NSLog(@"%@ %ld",title,i);
         }
     }
@@ -461,7 +453,7 @@ NSString *const BRTableCell = @"BRTableCell";
 
 #pragma 初始化顶部工具栏
 -(void)initTopBar{
-    self.TopBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 50)];
+    self.TopBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, BRScreenWidth, 50)];
     [self.TopBar setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:self.TopBar];
     if(self.Defaultconfig.type == BRImage){
@@ -472,7 +464,7 @@ NSString *const BRTableCell = @"BRTableCell";
         [self.CenterButton addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(EditTableViewMode)]];
         [self.TopBar addSubview:self.CenterButton];
         
-        self.multiPickButton = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth - 70, 10, 60, 30)];
+        self.multiPickButton = [[UIButton alloc] initWithFrame:CGRectMake(BRScreenWidth - 70, 10, 60, 30)];
         [self.multiPickButton setTitle:@"完成" forState:UIControlStateNormal];
         [self.multiPickButton addTarget:self action:@selector(FinishPickImage) forControlEvents:UIControlEventTouchUpInside];
         [self.multiPickButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -531,10 +523,6 @@ NSString *const BRTableCell = @"BRTableCell";
 -(void)DismissView{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
-
-
 
 
 @end
