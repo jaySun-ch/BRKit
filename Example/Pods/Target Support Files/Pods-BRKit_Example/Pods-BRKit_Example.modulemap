@@ -1,0 +1,6 @@
+framework module Pods_BRKit_Example {
+  umbrella header "Pods-BRKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

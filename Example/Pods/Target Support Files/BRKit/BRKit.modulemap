@@ -1,0 +1,6 @@
+framework module BRKit {
+  umbrella header "BRKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
