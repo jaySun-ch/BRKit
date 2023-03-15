@@ -7,7 +7,7 @@
 
 #import "UIView+BRExtension.h"
 #import "UITableView+BRExtension.h"
-//#import "NSObject+BRExtension.h"
+#import "NSObject+BRExtension.h"
 #import "BRTabBarController.h"
 
 
