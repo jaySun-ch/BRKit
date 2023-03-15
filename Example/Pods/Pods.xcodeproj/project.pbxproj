@@ -89,7 +89,7 @@
 		3991D340D9A6C21BD8ADD2358BBB23E3 /* BRKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5C2AE24119183D1826D2BEB0FBE478 /* Pods-BRKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BRKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		3D9EC0BF29C219A7006ABB24 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3D9EC0C029C219A7006ABB24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Source/README.md; sourceTree = "<group>"; };
+		3D9EC0C029C219A7006ABB24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3D9EC0C429C219A7006ABB24 /* BRWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BRWindow+Extension.h"; sourceTree = "<group>"; };
 		3D9EC0C529C219A7006ABB24 /* BRWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BRWindow+Extension.m"; sourceTree = "<group>"; };
 		3D9EC0C729C219A7006ABB24 /* BRCropRectangleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCropRectangleImage.m; sourceTree = "<group>"; };
@@ -203,6 +203,8 @@
 		3D9EC0BE29C219A7006ABB24 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3D9EC0EA29C219A7006ABB24 /* BRKIT.h */,
+				3D9EC0C029C219A7006ABB24 /* README.md */,
 				3D9EC0BF29C219A7006ABB24 /* .gitkeep */,
 				3D9EC0C129C219A7006ABB24 /* BRComponent */,
 				3D9EC0EB29C219A7006ABB24 /* BRExtension */,
@@ -383,8 +385,6 @@
 		D67F616E686D038AF6FE8D07791C13DC /* BRKit */ = {
 			isa = PBXGroup;
 			children = (
-				3D9EC0EA29C219A7006ABB24 /* BRKIT.h */,
-				3D9EC0C029C219A7006ABB24 /* README.md */,
 				3D9EC0BE29C219A7006ABB24 /* Source */,
 				E4CCAF3C6A816BC7DBA3EE07A8BC8DD5 /* Pod */,
 				EF728BFB8FAA0E828CB0FAA3653DDC71 /* Support Files */,
